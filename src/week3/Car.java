@@ -1,15 +1,24 @@
 package week3;
 
-import java.util.Scanner;
-
-public class Car {
-	Scanner input = new Scanner(System.in);
+public class Car {	
+	private String model;
+	private String color;
+	private int speed;
 	
-	String color;
-	int gear;
-	int speed;
+	private int id;
+	private static int numbers = 0;
 	
-	int changeGear(int g) {
+	public Car(String m, String c, int s) {
+		model = m;
+		color = c;
+		speed = s;
+		id = ++numbers;
+	}
+	
+	public static int getNumberOfCars() {
+		return numbers;
+	}
+	/*int changeGear(int g) {
 		System.out.print("변경 할 기어 입력:");
 		g = input.nextInt();
 		return g;
@@ -29,5 +38,5 @@ public class Car {
 	
 	public String toString() {
 		return "Car[color=" +color+ ",speed=" +speed+" ,gear=" +gear+"]";
-	}
+	}*/
 }
