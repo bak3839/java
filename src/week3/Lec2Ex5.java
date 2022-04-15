@@ -5,13 +5,13 @@ import java.util.Scanner;
 public class Lec2Ex5 {
 	public static void main(String args[])
 	{
-		Scanner input = new Scanner(System.in);
+		Scanner po = new Scanner(System.in);
 		double Pi = 0;
 		int n = 1;
 		int count;
 		
 		System.out.print("반복횟수 입력:");
-		count = input.nextInt();
+		count = po.nextInt();
 		
 		for(int i = 1; i <= count; i++) {
 			if(i % 2 == 0)
